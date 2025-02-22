@@ -1,0 +1,42 @@
+* {
+     padding: 0;
+
+     margin: 0;
+     box-sizing: border-box;
+}
+
+
+html,
+body {
+     height: 100%;
+     margin: 0;
+}
+
+#root {
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+}
+
+.footer {
+     margin-top: auto;
+     background: #fce4ec;
+     color: #ff69b4;
+}
+
+.footer-title {
+     font-family: "Pacifico", cursive;
+     color: #ff69b4;
+}
+
+.text-pink {
+     color: #ff69b4 !important;
+}
+
+.text-purple {
+     color: #a855f7 !important;
+}
+
+.border-pink {
+     border-color: #ff69b4 !important;
+}

@@ -1,0 +1,299 @@
+{
+  "products": [
+    {
+      "id": "5",
+      "name": "espresso",
+      "description": "this is an espresso tasted very del ",
+      "image": "src/assets/images/espresso.jpg",
+      "price": 40,
+      "quantity": 5
+    },
+    {
+      "id": "6",
+      "name": "french coffee",
+      "image": "src/assets/images/france-coffee.png",
+      "price": 230,
+      "quantity": 12
+    },
+    {
+      "id": "7",
+      "image": "src/assets/images/iced-coffee.jpg",
+      "name": "iced coffee",
+      "price": 80,
+      "quantity": 22
+    },
+    {
+      "id": "11",
+      "image": "src/assets/images/france-coffee.png",
+      "name": "french coffee",
+      "price": 30,
+      "quantity": 5
+    },
+    {
+      "id": "8",
+      "image": "src/assets/images/Caramel Iced Coffee.png",
+      "name": "caramel iced coffee",
+      "price": 80,
+      "quantity": 9
+    },
+    {
+      "id": "9",
+      "image": "src/assets/images/iced-coffee.jpg",
+      "name": "iced coffee",
+      "price": 10,
+      "quantity": 5
+    },
+    {
+      "id": "6",
+      "name": "french coffee",
+      "image": "src/assets/images/france-coffee.png",
+      "price": 30,
+      "quantity": 5
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "8f2e",
+      "name": "mahmoud ahmed",
+      "email": "asasas@asdsa",
+      "password": "123123",
+      "role": "customer"
+    },
+    {
+      "id": "8733",
+      "name": "mahasd",
+      "email": "loi@loi",
+      "password": "123456",
+      "role": "customer"
+    },
+    {
+      "id": "8533",
+      "name": "Hussein",
+      "email": "jebeil@fedora.com",
+      "password": "nopass",
+      "role": "customer"
+    },
+    {
+      "id": "3d44",
+      "name": "amr",
+      "email": "amr@notmail.com",
+      "password": "amr123",
+      "role": "customer"
+    },
+    {
+      "id": "c438",
+      "name": "mhmd anwar",
+      "email": "anwar@unix.com",
+      "password": "nopasss",
+      "role": "customer"
+    }
+  ],
+  "orders": [
+    {
+      "id": "48f8",
+      "customerName": "ali sayed ahmed",
+      "address": "sadat city",
+      "cardNumber": "7780 80087 08708 ",
+      "items": [
+        {
+          "id": "6",
+          "name": "nothing",
+          "image": "src/assets/images/france-coffee.png",
+          "price": 230,
+          "quantity": 4
+        },
+        {
+          "id": "9",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "name": "hdmiCable",
+          "price": 130,
+          "quantity": 1
+        },
+        {
+          "id": "7",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "name": "pizza maker",
+          "price": 2990,
+          "quantity": 2
+        },
+        {
+          "id": "8",
+          "image": "src/assets/images/Caramel Iced Coffee.png",
+          "name": "mug",
+          "price": 230,
+          "quantity": 3
+        },
+        {
+          "id": "11",
+          "image": "src/assets/images/france-coffee.png",
+          "name": "pizza maker",
+          "price": 2990,
+          "quantity": 4
+        }
+      ],
+      "totalPrice": 19680,
+      "date": "2/21/2025, 2:24:27 AM"
+    },
+    {
+      "id": "d89e",
+      "customerName": "mhmd loai shahwan ",
+      "address": "cairo nasr city ",
+      "cardNumber": "7869 0097 7878968",
+      "items": [
+        {
+          "id": "7",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "name": "pizza maker",
+          "price": 2990,
+          "quantity": 1
+        },
+        {
+          "id": "9",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "name": "hdmiCable",
+          "price": 130,
+          "quantity": 1
+        },
+        {
+          "id": "8",
+          "image": "src/assets/images/Caramel Iced Coffee.png",
+          "name": "mug",
+          "price": 230,
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "nothing",
+          "image": "src/assets/images/france-coffee.png",
+          "price": 230,
+          "quantity": 2
+        },
+        {
+          "id": "5",
+          "name": "mug",
+          "description": "this is an espresso tasted very del ",
+          "image": "src/assets/images/espresso.jpg",
+          "price": 230,
+          "quantity": 1
+        },
+        {
+          "id": "11",
+          "image": "src/assets/images/france-coffee.png",
+          "name": "pizza maker",
+          "price": 2990,
+          "quantity": 1
+        },
+        {
+          "id": "10",
+          "name": "router",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "price": 2300,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 9330,
+      "date": "2/21/2025, 10:30:41 PM"
+    },
+    {
+      "id": "06d5",
+      "customerName": "amr",
+      "address": "sadat city",
+      "cardNumber": "7780 80087 08708 ",
+      "items": [
+        {
+          "id": "7",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "name": "pizza maker",
+          "price": 2990,
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "nothing",
+          "image": "src/assets/images/france-coffee.png",
+          "price": 230,
+          "quantity": 2
+        },
+        {
+          "id": "10",
+          "name": "router",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "price": 2300,
+          "quantity": 1
+        },
+        {
+          "id": "11",
+          "image": "src/assets/images/france-coffee.png",
+          "name": "pizza maker",
+          "price": 2990,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 8740,
+      "date": "2/22/2025, 5:55:12 AM"
+    },
+    {
+      "id": "ada2",
+      "customerName": "amr",
+      "address": "sadat city",
+      "cardNumber": "7780 80087 08708 ",
+      "items": [
+        {
+          "id": "7",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "name": "pizza maker",
+          "price": 2990,
+          "quantity": 1
+        },
+        {
+          "id": "6",
+          "name": "nothing",
+          "image": "src/assets/images/france-coffee.png",
+          "price": 230,
+          "quantity": 4
+        },
+        {
+          "id": "5",
+          "name": "mug",
+          "description": "this is an espresso tasted very del ",
+          "image": "src/assets/images/espresso.jpg",
+          "price": 230,
+          "quantity": 3
+        },
+        {
+          "id": "8",
+          "image": "src/assets/images/Caramel Iced Coffee.png",
+          "name": "mug",
+          "price": 230,
+          "quantity": 3
+        }
+      ],
+      "totalPrice": 5290,
+      "date": "2/22/2025, 5:59:17 AM"
+    },
+    {
+      "id": "f977",
+      "customerName": "amr",
+      "address": "sadat city",
+      "cardNumber": "7869 0097 7878968",
+      "items": [
+        {
+          "id": "11",
+          "image": "src/assets/images/france-coffee.png",
+          "name": "pizza maker",
+          "price": 2990,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 2990,
+      "date": "2/22/2025, 12:30:06 PM"
+    }
+  ]
+}
