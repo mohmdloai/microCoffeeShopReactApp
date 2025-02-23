@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Form, Button, Container, Card } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -21,12 +23,21 @@ const Login = () => {
     if (user) {
       // Store the logged-in user in sessionStorage
       sessionStorage.setItem("user", JSON.stringify(user));
-      alert("Login successful!");
+
+      toast.success("Logedin  successfully!", {
+        position: "top-center",
+        autoClose: 1000,
+      });
+      // alert("Login successful!");
 
       // Redirect the user based on their role
       redirectLoggedInUser(user);
     } else {
-      alert("Invalid email or password. Try again!");
+      // alert("Invalid email or password. Try again!");
+      toast.error("Invalid Credentials  Check Your Email or Password!", {
+        position: "top-center",
+        autoClose: 3000,
+      });
     }
   };
 
@@ -37,6 +48,10 @@ const Login = () => {
     }
     if (user.role === "admin") {
       navigate("/products");
+      toast.info("Welcome Mr Admin To Your Dashboard!", {
+        position: "top-center",
+        autoClose: 3000,
+      });
     } else if (user.role === "customer") {
       navigate("/");
     }
