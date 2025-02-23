@@ -13,6 +13,9 @@ import { CartProvider } from "../context/CartContext"; //new
 import CheckoutPage from "../pages/CheckoutPage"; //new
 import Login from "../pages/Login"; //new
 import CoffeeCarousel from "../components/CoffeeCarousel";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { Zoom } from "react-toastify";
 
 const MainLayout = () => {
   const [cart, setCart] = useState([]);
@@ -50,6 +53,20 @@ const MainLayout = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        limit={1}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Zoom}
+      />
     </CartProvider>
   );
 };
