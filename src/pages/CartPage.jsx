@@ -28,8 +28,8 @@ const CartPage = () => {
               </tr>
             </thead>
             <tbody>
-              {cartItems.map((item, index) => (
-                <tr key={`${item.id}-${index}`}>
+              {cartItems.map((item) => (
+                <tr key={`${item.id}`}>
                   <td>{item.name}</td>
                   <td>${item.price}</td>
                   <td>{item.quantity}</td>

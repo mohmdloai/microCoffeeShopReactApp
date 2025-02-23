@@ -1,11 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Spinner, Table } from "react-bootstrap";
 import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 import { IoEye } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import axios from "axios";
-import { useState } from "react";
 import { deleteProduct, getAllProducts } from "../api/product";
 import { MoonLoader } from "react-spinners";
 import { guard } from "../guard/auth";
@@ -14,8 +12,10 @@ import Swal from "sweetalert2";
 
 const Products = () => {
   let [products, setProducts] = useState([]);
+  let [filteredProducts, setFilteredProducts] = useState([]);
   let [errors, setErrors] = useState(null);
   let [isLoading, setIsLoading] = useState(false);
+  let [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     guard("admin"); // allow only user with the "admin" role
@@ -27,6 +27,7 @@ const Products = () => {
       try {
         let res = await getAllProducts();
         setProducts(res.data);
+        setFilteredProducts(res.data);
         setIsLoading(false);
       } catch (error) {
         setErrors(error);
@@ -35,6 +36,13 @@ const Products = () => {
     };
     fetchProduct();
   }, []);
+
+  useEffect(() => {
+    const filtered = products.filter((product) =>
+      product.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredProducts(filtered);
+  }, [searchTerm, products]);
 
   const deleteHandler = async (productId) => {
     const result = await Swal.fire({
@@ -50,22 +58,25 @@ const Products = () => {
 
     await deleteProduct(productId)
       .then(() => {
-        setProducts(products.filter((product) => product.id != productId));
+        setProducts(products.filter((product) => product.id !== productId));
         toast.success("Product deleted successfully");
       })
       .catch((error) => toast.error(`${error.message}`));
   };
+
   return (
     <div className="container mt-3">
-      <h1 className="text-center text-muted">this is products tab</h1>
+      <h1 className="text-center text-muted">This is products tab</h1>
       <div className="d-flex justify-content-between">
         <Link className="btn btn-outline-primary" to=":id/edit">
           Add product
         </Link>
         <input
           type="text"
-          className="w-25 form-controller rounded"
-          placeholder="search here ....."
+          className="w-25 form-control rounded"
+          placeholder="Search here..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
         />
       </div>
       {isLoading && !errors && (
@@ -78,27 +89,24 @@ const Products = () => {
         />
       )}
       {errors && <div className="alert alert-danger">{errors.message}</div>}
-
       {!isLoading && !errors && (
         <Table className="mt-5" striped bordered hover>
           <thead>
             <tr>
               <th>Id</th>
               <th>Product Name</th>
-              <th>Product price</th>
-              <th>Product quantity</th>
-
+              <th>Product Price</th>
+              <th>Product Quantity</th>
               <th className="text-center">Actions</th>
             </tr>
           </thead>
           <tbody>
-            {products.map((product) => (
+            {filteredProducts.map((product) => (
               <tr key={product.id}>
                 <td>{product.id}</td>
                 <td>{product.name}</td>
                 <td>{product.price}</td>
                 <td>{product.quantity}</td>
-
                 <td className="d-flex justify-content-center">
                   <Link to={`${product.id}/edit`}>
                     <FaEdit className="text-info mx-2 fs-3" />
@@ -108,7 +116,7 @@ const Products = () => {
                   </Link>
                   <Link>
                     <MdDelete
-                      className="text-danger  mx-2 fs-3"
+                      className="text-danger mx-2 fs-3"
                       onClick={() => deleteHandler(product.id)}
                     />
                   </Link>

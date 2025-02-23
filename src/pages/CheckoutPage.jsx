@@ -41,7 +41,7 @@ const CheckoutPage = () => {
     };
 
     try {
-      // ✅ إرسال البيانات إلى الـ JSON Server
+      //sending data to json server
       const response = await fetch("http://localhost:5001/orders", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -50,7 +50,7 @@ const CheckoutPage = () => {
 
       if (!response.ok) throw new Error("Failed to place order");
 
-      // ✅ مسح السلة بعد الطلب
+      // dleting
       setCartItems([]);
       localStorage.removeItem("cartItems");
       toast.success("Order placed successfully!");
@@ -74,8 +74,7 @@ const CheckoutPage = () => {
   return (
     <Container className="mt-4">
       <h2>Checkout</h2>
-
-      {/* ✅ عرض المنتجات اللي في السلة */}
+      {/* showing the products in the cart */}
       {cartItems.length > 0 && (
         <Table striped bordered hover>
           <thead>

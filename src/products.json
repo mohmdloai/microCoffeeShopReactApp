@@ -1,24 +1,9 @@
 {
   "products": [
     {
-      "id": "5",
-      "name": "espresso",
-      "description": "this is an espresso tasted very del ",
-      "image": "src/assets/images/espresso.jpg",
-      "price": 40,
-      "quantity": 5
-    },
-    {
       "id": "16",
       "name": "french coffee",
       "image": "src/assets/images/france-coffee.png",
-      "price": 230,
-      "quantity": 12
-    },
-    {
-      "id": "17e",
-      "name": "chocolate latte",
-      "image": "src/assets/images/glass-chocolate-milk-dark-surface (1).jpg",
       "price": 230,
       "quantity": 12
     },
@@ -30,46 +15,53 @@
       "quantity": 10
     },
     {
-      "id": "17",
-      "name": "vanilla latte",
-      "image": "src/assets/images/Vanilla Latte.png",
-      "price": 200,
-      "quantity": 12
+      "id": "32e",
+      "name": "beans coffee latte",
+      "image": "src/assets/images/front-view-coffee-latte-with-coffee-beans.jpg",
+      "price": 100,
+      "quantity": 3
     },
     {
-      "id": "7",
-      "image": "src/assets/images/iced-coffee.jpg",
-      "name": "iced coffee",
-      "price": 80,
-      "quantity": 22
-    },
-    {
-      "id": "11",
-      "image": "src/assets/images/france-coffee.png",
-      "name": "french coffee",
-      "price": 30,
-      "quantity": 5
-    },
-    {
-      "id": "8",
-      "image": "src/assets/images/Caramel Iced Coffee.png",
-      "name": "caramel iced coffee",
-      "price": 80,
+      "id": "3e2",
+      "name": "beans coffee latte",
+      "image": "src/assets/images/front-view-coffee-latte-with-coffee-beans.jpg",
+      "price": 110,
       "quantity": 9
     },
     {
-      "id": "9",
-      "image": "src/assets/images/iced-coffee.jpg",
-      "name": "iced coffee",
-      "price": 10,
-      "quantity": 5
+      "id": "1r7",
+      "name": "vanilla latte",
+      "image": "src/assets/images/Vanilla Latte.png",
+      "price": 120,
+      "quantity": 3
     },
     {
-      "id": "6",
-      "name": "french coffee",
-      "image": "src/assets/images/france-coffee.png",
-      "price": 30,
-      "quantity": 5
+      "id": "111",
+      "name": "chocolate latte",
+      "image": "src/assets/images/glass-chocolate-milk-dark-surface (1).jpg",
+      "price": 120,
+      "quantity": 3
+    },
+    {
+      "id": "733",
+      "image": "src/assets/images/iced-coffee.jpg",
+      "name": "iced coffee",
+      "price": 80,
+      "quantity": 1
+    },
+    {
+      "id": "783",
+      "image": "src/assets/images/cup-three-layered-coffee-dark.jpg",
+      "name": "been Dark coffee",
+      "price": 87,
+      "quantity": 12
+    },
+    {
+      "id": "722",
+      "image": "src/assets/images/iced-coffee.jpg",
+      "name": "iced coffee",
+      "price": 80,
+      "quantity": 1
     }
   ],
   "users": [
@@ -121,6 +113,41 @@
       "email": "ali@linux.com",
       "password": "ali123",
       "role": "customer"
+    },
+    {
+      "id": "1c55",
+      "name": "mhmd",
+      "email": "mhmd@mail.com",
+      "password": "mhmd123",
+      "role": "customer"
+    },
+    {
+      "id": "d7ec",
+      "name": "new user",
+      "email": "newuser@mail.com",
+      "password": "new123",
+      "role": "customer"
+    },
+    {
+      "id": "51c5",
+      "name": "newperson",
+      "email": "newperson@mail.com",
+      "password": "new123",
+      "role": "customer"
+    },
+    {
+      "id": "4364",
+      "name": "newone",
+      "email": "newone@mail.com",
+      "password": "new123",
+      "role": "customer"
+    },
+    {
+      "id": "f9e8",
+      "name": "new customer",
+      "email": "customer@mail.com",
+      "password": "new123",
+      "role": "customer"
     }
   ],
   "orders": [
@@ -130,6 +157,13 @@
       "address": "sadat city",
       "cardNumber": "7780 80087 08708 ",
       "items": [
+        {
+          "id": "6",
+          "name": "nothing",
+          "image": "src/assets/images/france-coffee.png",
+          "price": 230,
+          "quantity": 4
+        },
         {
           "id": "6",
           "name": "nothing",
@@ -447,6 +481,307 @@
       ],
       "totalPrice": 174,
       "date": "2/23/2025, 3:35:33 AM"
+    },
+    {
+      "id": "96ec",
+      "customerName": "amr",
+      "address": "sadat city",
+      "cardNumber": "7780 80087 08708 ",
+      "items": [
+        {
+          "id": "16",
+          "name": "french coffee",
+          "image": "src/assets/images/france-coffee.png",
+          "price": 230,
+          "quantity": 1
+        },
+        {
+          "id": "3e",
+          "name": "beans coffee latte",
+          "image": "src/assets/images/front-view-coffee-latte-with-coffee-beans.jpg",
+          "price": 134,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 364,
+      "date": "2/23/2025, 4:44:29 AM"
+    },
+    {
+      "id": "c568",
+      "customerName": "amr",
+      "address": "sadat city",
+      "cardNumber": "7780 80087 08708 ",
+      "items": [
+        {
+          "id": "17e",
+          "name": "chocolate latte",
+          "image": "src/assets/images/glass-chocolate-milk-dark-surface (1).jpg",
+          "price": 230,
+          "quantity": 1
+        },
+        {
+          "id": "16",
+          "name": "french coffee",
+          "image": "src/assets/images/france-coffee.png",
+          "price": 230,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 460,
+      "date": "2/23/2025, 12:34:23 PM"
+    },
+    {
+      "id": "3c04",
+      "customerName": "amr",
+      "address": "sadat city",
+      "cardNumber": "7780 80087 08708 ",
+      "items": [
+        {
+          "id": "17e",
+          "name": "chocolate latte",
+          "image": "src/assets/images/glass-chocolate-milk-dark-surface (1).jpg",
+          "price": 230,
+          "quantity": 1
+        },
+        {
+          "id": "7",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "name": "iced coffee",
+          "price": 80,
+          "quantity": 1
+        },
+        {
+          "id": "8",
+          "image": "src/assets/images/Caramel Iced Coffee.png",
+          "name": "caramel iced coffee",
+          "price": 80,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 390,
+      "date": "2/23/2025, 12:36:41 PM"
+    },
+    {
+      "id": "4103",
+      "customerName": "mhmd",
+      "address": "nasr city",
+      "cardNumber": "7869 0097 7878968",
+      "items": [
+        {
+          "id": "5",
+          "name": "espresso",
+          "description": "this is an espresso tasted very del ",
+          "image": "src/assets/images/espresso.jpg",
+          "price": 40,
+          "quantity": 1
+        },
+        {
+          "id": "16",
+          "name": "french coffee",
+          "image": "src/assets/images/france-coffee.png",
+          "price": 230,
+          "quantity": 1
+        },
+        {
+          "id": "3e",
+          "name": "beans coffee latte",
+          "image": "src/assets/images/front-view-coffee-latte-with-coffee-beans.jpg",
+          "price": 134,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 404,
+      "date": "2/23/2025, 12:48:08 PM"
+    },
+    {
+      "id": "2314",
+      "customerName": "amr",
+      "address": "sadat city",
+      "cardNumber": "7780 80087 08708 ",
+      "items": [
+        {
+          "id": "17e",
+          "name": "chocolate latte",
+          "image": "src/assets/images/glass-chocolate-milk-dark-surface (1).jpg",
+          "price": 230,
+          "quantity": 1
+        },
+        {
+          "id": "5",
+          "name": "espresso",
+          "description": "this is an espresso tasted very del ",
+          "image": "src/assets/images/espresso.jpg",
+          "price": 40,
+          "quantity": 1
+        },
+        {
+          "id": "3e",
+          "name": "beans coffee latte",
+          "image": "src/assets/images/front-view-coffee-latte-with-coffee-beans.jpg",
+          "price": 134,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 404,
+      "date": "2/23/2025, 1:13:09 PM"
+    },
+    {
+      "id": "e547",
+      "customerName": "amr",
+      "address": "sadat city",
+      "cardNumber": "7780 80087 08708 ",
+      "items": [
+        {
+          "id": "3e",
+          "name": "beans coffee latte",
+          "image": "src/assets/images/front-view-coffee-latte-with-coffee-beans.jpg",
+          "price": 134,
+          "quantity": 1
+        },
+        {
+          "id": "17e",
+          "name": "chocolate latte",
+          "image": "src/assets/images/glass-chocolate-milk-dark-surface (1).jpg",
+          "price": 230,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 364,
+      "date": "2/23/2025, 7:44:37 PM"
+    },
+    {
+      "id": "0f6d",
+      "customerName": "mhmd",
+      "address": "zagazig",
+      "cardNumber": "7869 0097 7878968",
+      "items": [
+        {
+          "id": "7",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "name": "iced coffee",
+          "price": 80,
+          "quantity": 1
+        },
+        {
+          "id": "11",
+          "image": "src/assets/images/france-coffee.png",
+          "name": "french coffee",
+          "price": 30,
+          "quantity": 1
+        },
+        {
+          "id": "17e",
+          "name": "chocolate latte",
+          "image": "src/assets/images/glass-chocolate-milk-dark-surface (1).jpg",
+          "price": 230,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 340,
+      "date": "2/23/2025, 7:46:19 PM"
+    },
+    {
+      "id": "f96a",
+      "customerName": "amr",
+      "address": "sadat city",
+      "cardNumber": "7780 80087 08708 ",
+      "items": [
+        {
+          "id": "16",
+          "name": "french coffee",
+          "image": "src/assets/images/france-coffee.png",
+          "price": 230,
+          "quantity": 1
+        },
+        {
+          "id": "17e",
+          "name": "chocolate latte",
+          "image": "src/assets/images/glass-chocolate-milk-dark-surface (1).jpg",
+          "price": 230,
+          "quantity": 1
+        },
+        {
+          "id": "3e",
+          "name": "beans coffee latte",
+          "image": "src/assets/images/front-view-coffee-latte-with-coffee-beans.jpg",
+          "price": 134,
+          "quantity": 2
+        }
+      ],
+      "totalPrice": 728,
+      "date": "2/23/2025, 10:32:11 PM"
+    },
+    {
+      "id": "4d24",
+      "customerName": "mhmd",
+      "address": "zagazig",
+      "cardNumber": "7869 0097 7878968",
+      "items": [
+        {
+          "id": "3e",
+          "name": "beans coffee latte",
+          "image": "src/assets/images/front-view-coffee-latte-with-coffee-beans.jpg",
+          "price": 134,
+          "quantity": 1
+        },
+        {
+          "id": "733",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "name": "iced coffee",
+          "price": 80,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 214,
+      "date": "2/23/2025, 11:30:12 PM"
+    },
+    {
+      "id": "8080",
+      "customerName": "mhmd",
+      "address": "zagazig",
+      "cardNumber": "7869 0097 7878968",
+      "items": [
+        {
+          "id": "733",
+          "image": "src/assets/images/iced-coffee.jpg",
+          "name": "iced coffee",
+          "price": 80,
+          "quantity": 1
+        },
+        {
+          "id": "783",
+          "image": "src/assets/images/cup-three-layered-coffee-dark.jpg",
+          "name": "been Dark coffee",
+          "price": 87,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 167,
+      "date": "2/23/2025, 11:37:31 PM"
+    },
+    {
+      "id": "7360",
+      "customerName": "mhmd",
+      "address": "zagazig",
+      "cardNumber": "7780 80087 08708 ",
+      "items": [
+        {
+          "id": "32e",
+          "name": "beans coffee latte",
+          "image": "src/assets/images/front-view-coffee-latte-with-coffee-beans.jpg",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "id": "3e",
+          "name": "beans coffee latte",
+          "image": "src/assets/images/front-view-coffee-latte-with-coffee-beans.jpg",
+          "price": 134,
+          "quantity": 1
+        }
+      ],
+      "totalPrice": 234,
+      "date": "2/23/2025, 11:53:04 PM"
     }
   ]
 }

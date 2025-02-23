@@ -5,6 +5,7 @@ import { Button, Container, Form } from "react-bootstrap";
 import { addNewProduct, editProduct, getProductById } from "../api/product";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const ProductForm = () => {
   const navigate = useNavigate();
@@ -38,12 +39,14 @@ const ProductForm = () => {
   const productHandler = async (e) => {
     e.preventDefault();
 
-    if (id == 0) {
+    if (!id == 0) {
       await addNewProduct(productFormData);
       navigate("/products");
+      toast.success("Product added successfully");
     } else {
       await editProduct(id, productFormData);
       navigate("/products");
+      toast.success("Product edited successfully");
     }
   };
   return (
@@ -84,7 +87,7 @@ const ProductForm = () => {
           />
         </Form.Group>
         <Button variant="info" type="submit">
-          {id == 0 ? "Add New Product" : "Edit Product"}
+          {id == ":id" ? "Add New Product" : "Edit Product"}
         </Button>
       </Form>
     </Container>

@@ -55,7 +55,7 @@ const Header = () => {
 
             {loggedInUser ? (
               <div className="d-flex align-items-center gap-3">
-                {/* اسم اليوزر جوه دايرة */}
+                {/* user in bage */}
                 <Badge
                   pill
                   bg="warning"
@@ -66,7 +66,7 @@ const Header = () => {
                   {loggedInUser.role === "admin" ? "Admin" : loggedInUser.name}
                 </Badge>
 
-                {/* زر تسجيل الخروج */}
+                {/* {for loging out btn */}
                 <Button variant="danger" size="sm" onClick={handleLogout}>
                   Logout
                 </Button>
@@ -90,7 +90,7 @@ const Header = () => {
               </>
             )}
 
-            {/* أيقونة السلة */}
+            {/* cart icon */}
             <Nav.Link as={Link} to="/cart" className="position-relative">
               <FaShoppingCart size={24} color="white" />
               {cartItems.length > 0 && (
