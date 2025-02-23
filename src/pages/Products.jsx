@@ -9,6 +9,8 @@ import { useState } from "react";
 import { deleteProduct, getAllProducts } from "../api/product";
 import { MoonLoader } from "react-spinners";
 import { guard } from "../guard/auth";
+import { toast } from "react-toastify";
+import Swal from "sweetalert2";
 
 const Products = () => {
   let [products, setProducts] = useState([]);
@@ -35,11 +37,23 @@ const Products = () => {
   }, []);
 
   const deleteHandler = async (productId) => {
+    const result = await Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+      confirmButtonText: "Yes, delete it!",
+    });
+    if (!result.isConfirmed) return;
+
     await deleteProduct(productId)
       .then(() => {
         setProducts(products.filter((product) => product.id != productId));
+        toast.success("Product deleted successfully");
       })
-      .catch((error) => console.log(error));
+      .catch((error) => toast.error(`${error.message}`));
   };
   return (
     <div className="container mt-3">
