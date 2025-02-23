@@ -6,6 +6,14 @@ import { CartContext } from "../context/CartContext";
 import { getLoggedInUser, logout } from "../guard/auth";
 
 const Header = () => {
+  const headerStyle = {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    textAlign: "center",
+    zIndex: 1000,
+  };
   const { cartItems } = useContext(CartContext);
   const navigate = useNavigate();
   // const loggedInUser = JSON.parse(sessionStorage.getItem("loggedInUser"));
@@ -17,7 +25,13 @@ const Header = () => {
   };
 
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="py-3">
+    <Navbar
+      style={headerStyle}
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      className="py-3"
+    >
       <Container>
         <Navbar.Brand as={Link} to="/" className="fw-bold">
           microShop
